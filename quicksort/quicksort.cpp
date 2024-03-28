@@ -1,7 +1,9 @@
 #include <iostream>
-using namespacce std;
+using namespace std;
 
-int arr[20]
+int arr[20];         //array of interest to hold value
+int cmp_count = 0;  //number of comparasion
+
 
 
 
