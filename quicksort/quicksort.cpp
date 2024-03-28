@@ -44,7 +44,8 @@ void q_short(int low, int high)  // Quick sort algorithm
         return;
     }
 
-
+    pivot = arr[low];   //step 2
+    
 
 
 
