@@ -38,5 +38,16 @@ void swap(int x, int y)   // Swaps the element at index x with the element at in
 
 void q_short(int low, int high)  // Quick sort algorithm
 {
+    int temp;
+    int pivot, i, j;
+    if (low > high) {   //step 1
+        return;
+    }
+
+
+
+
+
+
 
 }
