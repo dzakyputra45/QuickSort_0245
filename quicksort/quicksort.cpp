@@ -48,6 +48,17 @@ void q_short(int low, int high)  // Quick sort algorithm
     i = low + 1;        //step 3
     j = high;           //step 4
 
+    while (i <= j)      //step 10
+    {
+        while (i <= j) {    //search for a element greater than pivot
+            while ((arr[i] <= pivot) && (i <= high)) 
+            {
+                i++;
+                cmp_count++;
+            }
+
+    }
+
 
 
 
