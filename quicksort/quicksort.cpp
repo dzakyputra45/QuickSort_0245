@@ -27,4 +27,12 @@ void Input() {
     
 }
 
-void swap(int x, int y) {  // Swaps the element at index x with the element at index y
+void swap(int x, int y)   // Swaps the element at index x with the element at index y
+{
+    int temp = arr[x];
+    arr[x] = arr[y];
+    arr[y] = temp;
+    mov_count++;
+
+}
+
