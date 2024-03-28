@@ -67,11 +67,29 @@ void q_short(int low, int high)  // Quick sort algorithm
             {
                 swap(i, j);                             //swap the element at index o whit the element at index
             }
+        }
+
+        if (low < j) {                                  //step 11
+            swap(low, j);                               //swap the pivot element with the element at index j
+        }
+        //recursive call to sort the left sub array
+        q_short(low, j - 1);                            //step 12
+        //recursive call to sort the right sub array
+        q_short(j + 1, high);                           //step 13
+}
+
+    void Display() {
+        cout << "\n\n";
+        cout << "Sorted Array:" << endl;
+        cout << "------------" << endl;
+
+        for (int i = 0; i < 20; i++)
+        {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+
+        cout << "\nNumber of comparisons: " << cmp_count << endl;
+        cout << "Number of data movements: " << mov_count << endl;
 
     }
-
-
-
-
-
-}
