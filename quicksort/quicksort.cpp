@@ -93,3 +93,16 @@ void q_short(int low, int high)  // Quick sort algorithm
         cout << "Number of data movements: " << mov_count << endl;
 
     }
+
+    int main() {
+        char ch;
+        do {
+            Input();
+            q_short(0, 19);
+            Display();
+            cout << "\n\nApakah Anda ingin melanjutkan? (y/n): ";
+            cin >> ch;
+        } while (ch == 'y' || ch == 'Y');
+
+        return 0;
+    }
